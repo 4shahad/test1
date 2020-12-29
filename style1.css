@@ -1,0 +1,166 @@
+*{
+    padding:0;
+    margin:0;
+}
+ 
+
+.navbar{
+    height: 75px;
+    width: 100%;
+    background:rgb(27, 51, 60);
+    
+}
+.navbar img{
+   align-content: center;
+    width: 50px;
+    height: auto;
+    padding: 20px 20px;
+    margin-right: -20px;
+}
+
+.navbar ul{
+   
+    float: right ;
+    margin-right: 20px; 
+}
+.navbar ul li{
+list-style: none;
+display: inline-block;
+line-height: 80px;
+}
+.navbar ul li  img{
+    margin-top:auto;
+    float: left ;
+    width: 40px;
+    height: auto; 
+}
+
+.navbar ul li   a .active,
+.navbar ul li  a :hover{
+    background: black;
+    border-radius: 2px;
+}
+
+.photo{
+    background-image: url(tt.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    height: 566px; 
+}
+.box {
+    position: relative;
+    top:50%;
+    left:20%;
+    transform: translate(-50%,-50%);
+    width:400px;
+    padding:40px;	
+    background:rgba(0, 0, 0, .5);
+    box-sizing:border-box;
+    box-shadow:0 15px 25px rgba(0, 0, 0, .2);
+    border-radius:10px;
+    
+    text-align: center;
+    color: rgb(239, 240, 234);
+}
+#heading3{
+    font-size: 45px;
+    font-style: italic;
+}
+#paragraph { 
+  
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.inside_container1{
+    bottom: 0px;
+    position:absolute;
+    width: 100%;
+   
+  
+
+}
+
+.container1{
+    top:100px;
+   
+    overflow: hidden;
+    animation:color 65s ease;
+}
+
+#image1{
+
+    width: 500px;
+    height: 500px;
+  position:absolute;
+   top:  100px;
+    left: -500px;
+    animation: move 15s ease ;
+}
+#image2{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 100px;
+    left: -500px;
+    animation: move 20s ease 5s;
+}
+#image3{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 100px;
+    left: -500px;
+    animation: move 20s ease 15s;
+}
+#image4{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 100px;
+    left: -500px;
+    animation: move 25s ease 25s;
+}
+#image5{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 100px;
+    left: -500px;
+    animation: move 30s ease 35s;
+}
+#image6{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 100px;
+    left: -500px;
+    animation: move 40s ease 45s;
+}
+@keyframes move{
+    0%{
+        top:100px;
+        left: -500px;
+        transform: scale(.4);
+    }
+    50%{
+        top:100px;
+        left: 450px;
+        transform: scale(1);
+    }
+  100%{
+        top:100px;
+        left: 1300px;
+        transform: scale(.4);
+    }
+}
+@keyframes color{
+    0%{
+        background-color:rgb(95, 67, 53);
+    }
+    100%{
+        background-color: rgb(192, 168, 144);
+    }
+}
